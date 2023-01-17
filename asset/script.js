@@ -89,28 +89,26 @@ var specialCharacters = [
   ];
   
   // Function to prompt user for password options
-  function getPasswordOptions() {
-    /* 
+ // Function to prompt user for password options
+function getPasswordOptions() {
+    var passwordLength = prompt("How many characters would you like in the password?");
   
-      The main purpose of this method is to gather user input to determine
-      what will be included in the generated password.
+    if (passwordLength < 8 || passwordLength > 64) {
+      alert("please select number greater then 8 and less 64")
+      return;
+    }
+    var upperCase = confirm("Are Uppercase letters allowed?");
+    var lowerCase = confirm("Are Lowercase letters allowed?");
+    var Numeric = confirm("Are Numeric characters allowed?");
+    var special = confirm("Are special characters allowed?");
+   if(upperCase === false && lowerCase === false && Numeric === false && special === false) {
+   alert(" you must select atleast one character type")
+   return;
+   }
+   var options = { passwordLength, upperCase, lowerCase, Numeric, special}
   
-      Questions to ask users:
-      - How many characters would you like in the password? (Prompt or Confirm?)
-      - Are Uppercase letters allowed? (Prompt or Confirm?)
-      - Are Lowercase letters allowed? (Prompt or Confirm?)
-      - Are Numeric characters allowed? (Prompt or Confirm?)
-      - Are special characters allowed? (Prompt or Confirm?)
+   return options
   
-      Other Requirements:
-      - code should validate for each input: 
-          - Many times users will try to input incorrect input to try and break the app. What if a user inserts 
-            a letter instead of a number when we ask for password length? How can we check to see that the correct 
-            data type (a number) was inserted? 
-        - What can we use to display a message to the user in the browser if they input incorrect content ? 
-    */
-  
-    //  where should this function be called within the file?
   }
   
   // Function for getting a random element from an array
