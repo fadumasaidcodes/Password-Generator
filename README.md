@@ -1,5 +1,7 @@
 # Module 5 Challenge: Password Generator
 
+[Live Link] ("https://fadumasaidcodes.github.io/Password-Generator/")
+
 ### Screenshot 
 
 <img width="1382" alt="Screenshot 2023-01-17 at 20 13 55" src="https://user-images.githubusercontent.com/102771343/213002480-cbf5a1e0-af63-4849-9f7a-d1e44c66ba42.png">
