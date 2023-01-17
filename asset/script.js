@@ -126,9 +126,31 @@ function getPasswordOptions() {
   
   // Function to generate password with user input
   function generatePassword() {
-  
-  }
-  
+    var characterArray = [];
+     var options =  getPasswordOptions()
+     if(options.upperCase) {
+    characterArray = characterArray.concat(upperCasedCharacters)
+     }
+     if(options.lowerCase) {
+      characterArray = characterArray.concat(lowerCasedCharacters) 
+     
+     }
+     if(options.Numeric) {
+      characterArray = characterArray.concat(numericCharacters)
+     }
+    if(options.special) {
+      characterArray = characterArray.concat(specialCharacters)
+    }
+    console.log(characterArray)
+    var string = ""
+    for(var i = 0; i < options.passwordLength; i++) {
+      var digit = getRandom(characterArray);
+    
+     string+= digit
+    }
+      return string
+    
+    }
   // Get references to the #generate element
   var generateBtn = document.querySelector('#generate');
   
