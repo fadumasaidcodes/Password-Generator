@@ -1,6 +1,6 @@
 # Module 5 Challenge: Password Generator
 
-[Live Link] (https://fadumasaidcodes.github.io/Password-Generator/)
+- [Live Link] (https://fadumasaidcodes.github.io/Password-Generator/)
 
 ### Screenshot 
 
