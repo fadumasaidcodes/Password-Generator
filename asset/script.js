@@ -141,7 +141,7 @@ function getPasswordOptions() {
     if(options.special) {
       characterArray = characterArray.concat(specialCharacters)
     }
-    console.log(characterArray)
+    // console.log(characterArray)
     var string = ""
     for(var i = 0; i < options.passwordLength; i++) {
       var digit = getRandom(characterArray);

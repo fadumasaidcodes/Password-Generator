@@ -16,7 +16,7 @@ body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/*  */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -49,11 +49,11 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
+/* the parrent div  */
 .card-body {
   min-height: 100px;
 }
-
+/*  the footer parrent div  */
 .card-footer {
   text-align: center;
 }
@@ -71,7 +71,7 @@ header {
   display: block;
   clear: both;
 }
-
+/* button css  */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -117,6 +117,8 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
+/* media querry to make the page responsible */
 
 @media (max-width: 690px) {
   .btn {
